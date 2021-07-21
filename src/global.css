@@ -1,9 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@500;900&display=swap");
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+}
+:root {
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Montserrat", sans-serif;
+  --fw-primary-medium: 500;
+  --fw-primary-black: 900;
+  --fw-secondary-semi-bold: 600;
+  --primary-color: #fe4775;
+  --secondary-color: #161060;
+  --text-primary: #393939;
+  --text-secondary: #111111;
+  --content-background: #d4d4d4;
 }
 
 html {
@@ -11,7 +22,7 @@ html {
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--ff-primary);
   margin: 0;
 }
 
@@ -21,5 +32,5 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--ff-primary);
 }
