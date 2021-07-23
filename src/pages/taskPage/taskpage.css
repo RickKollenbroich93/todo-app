@@ -2,5 +2,8 @@
   height: 100vh;
 }
 h1 {
-  padding: 1.5rem;
+  position: absolute;
+  display: flex;
+  top: 10.8%;
+  left: 10%;
 }

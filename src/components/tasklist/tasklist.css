@@ -1,0 +1,8 @@
+.tasklist {
+  border: none;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 27.15%;
+  left: 21.15%;
+}
