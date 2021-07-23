@@ -6,4 +6,4 @@ export default {
   parameters: { layout: "fullscreen" },
 };
 
-export const dog = () => fieldset;
+export const addTask = () => fieldset;
