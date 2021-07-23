@@ -1,0 +1,8 @@
+.btnclock {
+  background-color: #ff69b400;
+  border: none;
+  position: absolute;
+  display: flex;
+  top: 16.6%;
+  right: 10%;
+}
