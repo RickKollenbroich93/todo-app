@@ -1,32 +1,31 @@
-<form>
-  <label>
-    <span>Enter Task</span>
-    <abbr title="required">*</abbr>
-  </label>
-  <input type="text" id="task" name="task" />
+<div class="wrapper">
+  <form class="form">
+    <div>
+      <div>
+        <label for="task"> </label>
+        <input type="text" id="task" name="task" placeholder="Enter Task" />
+      </div>
 
-  <fieldset>
-    <legend>WHEN</legend>
+      <fieldset class="fieldset">
+        <legend><h3>WHEN</h3></legend>
 
-    <label for="time_1">
-      <input type="radio" id="date_1" name="Today" value="" />
-      Today
-    </label>
+        <label class="label">
+          <input type="radio" id="date_1" name="when" value="" />
+          Today
+        </label>
 
-    <label for="time_2">
-      <input type="radio" id="date_2" name="Tomorrow" value="" />
-      Tomorrow
-    </label>
+        <label class="label">
+          <input type="radio" id="date_2" name="when" value="" />
+          Tomorrow
+        </label>
 
-    <label for="time_3">
-      <input type="radio" id="date_3" name="Select Date" value="" />
-      Select Date
-    </label>
-  </fieldset>
+        <label class="label">
+          <input type="radio" id="date_3" name="when" value="" />
+          Select Date
+        </label>
+      </fieldset>
+    </div>
 
-  <section>
-    <p>
-      <button class="btn" type="submit">Add Task</button>
-    </p>
-  </section>
-</form>
+    <button class="add-btn" type="submit">Add Task</button>
+  </form>
+</div>
