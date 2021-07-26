@@ -1,4 +1,5 @@
 .btnburger {
-  background-color: #ff69b400;
+  background-color: transparent;
   border: none;
+  cursor: pointer;
 }
