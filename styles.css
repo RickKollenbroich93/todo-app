@@ -1,0 +1,28 @@
+::before ::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
+.btnburger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.btnclock {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.headerMenu {
+  display: grid;
+  grid-auto-flow: column;
+}
