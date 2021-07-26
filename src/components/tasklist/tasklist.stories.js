@@ -1,11 +1,9 @@
-import "./tasklist.css";
-import tasklist from "./tasklist.html";
-import tasklistDone from "./tasklistdone.html";
+import "./taskList.css";
+import taskListRegular from "./taskList.html";
 
 export default {
-  title: "Components/Tasklist",
+  title: "Components/TaskList",
   parameters: { layout: "centered" },
 };
 
-export const regular = () => tasklist;
-export const done = () => tasklistDone;
+export const list = () => taskListRegular;

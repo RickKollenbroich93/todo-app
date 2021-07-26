@@ -1,11 +1,6 @@
-.taskItem {
-  display: block;
-}
-.taskItem:focus-within > .taskItem__labelText {
-  text-decoration: line-through 0.14em var(--primary-color);
-}
-.taskItem__checkbox {
-  opacity: 0;
-  width: 0;
-  height: 0;
+.taskList {
+  overflow: auto;
+  padding-left: 1em;
+  padding-top: 3em;
+  background-color: var(--content-background2);
 }
