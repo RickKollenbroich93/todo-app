@@ -1,0 +1,11 @@
+.taskNav__link {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  color: var(--text-primary-nav);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.taskNav__link--activ {
+  color: var(--primary-color);
+}

@@ -1,0 +1,6 @@
+.taskList {
+  overflow: auto;
+  padding-left: 1em;
+  padding-top: 3em;
+  background-color: var(--content-background2);
+}
