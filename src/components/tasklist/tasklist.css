@@ -1,9 +1,11 @@
-.tasklist {
-  border: none;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 23.15%;
-  left: 21.15%;
-  gap: 30px;
+.taskItem {
+  display: block;
+}
+.taskItem:focus-within > .taskItem__labelText {
+  text-decoration: line-through 0.14em var(--primary-color);
+}
+.taskItem__checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
