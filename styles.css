@@ -61,6 +61,16 @@ textarea {
   border: none;
   cursor: pointer;
 }
+.btn {
+  border-top-left-radius: 5px;
+  background: var(--primary-color);
+  border: none;
+  padding: 20px 20px;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: 0;
+}
 
 .dateSelector {
   display: grid;
@@ -73,6 +83,7 @@ textarea {
   padding-left: 1em;
   padding-top: 4em;
   background-color: var(--content-background2);
+  border-top-left-radius: 10px;
 }
 .taskItem {
   display: block;
