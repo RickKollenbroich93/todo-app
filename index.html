@@ -9,71 +9,58 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <button class="btnburger" aria-label="open menu">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="30"
-            height="12"
-            viewBox="0 0 30 12"
-          >
-            <defs>
-              <style>
-                .a {
-                  fill: none;
-                }
-                .b {
-                  clip-path: url(#a);
-                }
-                .c {
-                  fill: #373737;
-                  stroke: #2f2f2f;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                }
-                .d {
-                  stroke: none;
-                }
-              </style>
-              <clipPath id="a">
-                <rect class="a" width="30" height="12" />
-              </clipPath>
-            </defs>
-            <g class="b">
-              <g class="c">
-                <rect class="d" width="22" height="4" rx="2" />
-                <rect
-                  class="a"
-                  x="0.5"
-                  y="0.5"
-                  width="21"
-                  height="3"
-                  rx="1.5"
-                />
-              </g>
-              <g class="c" transform="translate(0 8)">
-                <rect class="d" width="30" height="4" rx="2" />
-                <rect
-                  class="a"
-                  x="0.5"
-                  y="0.5"
-                  width="29"
-                  height="3"
-                  rx="1.5"
-                />
-              </g>
-            </g>
-          </svg>
-        </button>
-        <div class="headerMenu">
-          <h1>Tasks</h1>
+      <button class="btnburger" aria-label="open menu">
+        <img src="src/assets/burger.svg" alt="" />
+      </button>
+      <div class="headerMenu">
+        <h1>Tasks</h1>
 
-          <button aria-label="show notifications" class="btnclock">
-            <img src="src/assets/notif.svg" alt="" />
-          </button>
-        </div>
-      </header>
+        <button aria-label="show notifications" class="btnclock">
+          <img src="src/assets/notif.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="dateSelector">
+        <a href="#" class="taskNav__link">today</a>
+        <a href="#" class="taskNav__link">tomorrow</a>
+        <a href="#" class="taskNav__link">this week</a>
+      </div>
+      <section class="taskList">
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Book appointment with Jared</span
+          >
+        </label>
+
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Book appointment with Jared</span
+          >
+        </label>
+
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Book appointment with Jared</span
+          >
+        </label>
+
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Book appointment with Jared</span
+          >
+        </label>
+
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Book appointment with Jared</span
+          >
+        </label>
+      </section>
     </div>
   </body>
 </html>
