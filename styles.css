@@ -128,9 +128,9 @@ textarea {
 }
 .form {
   display: flex;
-  height: 100%;
   justify-content: space-between;
   flex-direction: column;
+  flex-grow: 1;
 }
 .wrapper {
   height: 100vh;
@@ -169,5 +169,10 @@ input[id^="task"]:focus {
   border-bottom: 0.25rem solid var(--text-primary);
 }
 .pagewrapper {
-  height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.h1 {
+  margin: 0;
 }
