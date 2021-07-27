@@ -112,3 +112,62 @@ textarea {
 .taskNav__link--activ {
   color: var(--primary-color);
 }
+
+.add-btn {
+  background: var(--primary-color);
+  border: none;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  padding: 20px 20px;
+}
+.fieldset {
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.form {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.wrapper {
+  height: 100vh;
+}
+legend,
+label[for="task"] {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+legend {
+  margin-bottom: 1rem;
+}
+input[type="radio"] {
+  opacity: 0;
+}
+.label:focus-within {
+  color: var(--primary-color);
+}
+
+input[type="text"] {
+  border: none;
+}
+input[id^="task"] {
+  color: #d8d8d8;
+  letter-spacing: 0.7px;
+  font-size: 3rem;
+  max-width: 100%;
+  outline: none;
+  padding: 1rem 0 1rem 0;
+  border-bottom: 0.25rem solid #d8d8d8;
+}
+input[id^="task"]::placeholder {
+  color: #d8d8d8;
+}
+input[id^="task"]:focus {
+  border-bottom: 0.25rem solid var(--text-primary);
+}
+.pagewrapper {
+  height: 100vh;
+}
