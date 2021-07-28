@@ -15,7 +15,30 @@
   --text-primary: #393939;
   --text-primary-nav: #00000054;
   --text-secondary: #111111;
-  --content-background: #d4d4d4;
+  --content-background: #ebebeb;
+}
+h1 {
+  font-size: 2.938rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-secondary-bold);
+  font-size: 0.938rem;
+}
+
+h5,
+h6 {
+  font-size: 0.8rem;
+  font-weight: var(--fw-primary);
 }
 
 body {
@@ -111,4 +134,80 @@ textarea {
 }
 .taskNav__link--activ {
   color: var(--primary-color);
+}
+
+.add-btn {
+  background: var(--primary-color);
+  border: none;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  padding: 20px 20px;
+}
+.fieldset {
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.wrapper {
+  height: 100vh;
+}
+legend,
+label[for="task"] {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+legend {
+  margin-bottom: 1rem;
+}
+input[type="radio"] {
+  opacity: 0;
+}
+.label:focus-within {
+  color: var(--primary-color);
+}
+
+input[type="text"] {
+  border: none;
+}
+input[id^="task"] {
+  color: #d8d8d8;
+  letter-spacing: 0.7px;
+  font-size: 3rem;
+  max-width: 100%;
+  outline: none;
+  padding: 1rem 0 1rem 0;
+  border-bottom: 0.25rem solid #d8d8d8;
+}
+input[id^="task"]::placeholder {
+  color: #d8d8d8;
+}
+input[id^="task"]:focus {
+  border-bottom: 0.25rem solid var(--text-primary);
+}
+.pagewrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.h1 {
+  margin: 3%;
+}
+.labelbackground {
+  display: flex;
+  gap: 10%;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 3%;
+  background-color: var(--content-background);
+  border-radius: 20px;
+}
+.textfieldwrapper {
+  margin: 3%;
 }

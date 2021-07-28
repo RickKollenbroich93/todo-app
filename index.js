@@ -13,7 +13,17 @@ const taskList = document.querySelector(".taskList");
 const taskOne = createTaskListItem("Kaffee kochen");
 
 taskList.append(taskOne);
+//______________________TEST--FIELD________________________
 
+// let msg = document.getElementById["task"];
+
+function save() {
+  let task = document.getElementById("task").value;
+
+  window.localStorage.setItem(task);
+}
+
+//______________________TEST--FIELD________________________
 function createTaskListItem(taskName) {
   const newTaskLabel = document.createElement("label");
   const newTaskInput = document.createElement("input");
