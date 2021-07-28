@@ -176,3 +176,12 @@ input[id^="task"]:focus {
 .h1 {
   margin: 0;
 }
+.labelbackground {
+  display: flex;
+  gap: 10%;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 3%;
+  background-color: var(--content-background);
+  border-radius: 20px;
+}
