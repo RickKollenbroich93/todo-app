@@ -15,7 +15,30 @@
   --text-primary: #393939;
   --text-primary-nav: #00000054;
   --text-secondary: #111111;
-  --content-background: #d4d4d4;
+  --content-background: #ebebeb;
+}
+h1 {
+  font-size: 2.938rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-secondary-bold);
+  font-size: 0.938rem;
+}
+
+h5,
+h6 {
+  font-size: 0.8rem;
+  font-weight: var(--fw-primary);
 }
 
 body {
@@ -174,7 +197,7 @@ input[id^="task"]:focus {
   flex-direction: column;
 }
 .h1 {
-  margin: 0;
+  margin: 3%;
 }
 .labelbackground {
   display: flex;
@@ -184,4 +207,7 @@ input[id^="task"]:focus {
   padding: 3%;
   background-color: var(--content-background);
   border-radius: 20px;
+}
+.textfieldwrapper {
+  margin: 3%;
 }
