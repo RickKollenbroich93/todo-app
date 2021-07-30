@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>AddTask</title>
   </head>
   <body>
     <div class="pagewrapper">
@@ -14,24 +14,48 @@
         <div>
           <div class="textfieldwrapper">
             <label for="task"> </label>
-            <input type="text" id="task" name="task" placeholder="Enter Task" />
+            <input
+              class="inputField"
+              type="text"
+              id="task"
+              name="task"
+              placeholder="Enter Task"
+            />
           </div>
 
           <fieldset class="fieldset">
             <legend><h3>WHEN</h3></legend>
             <div class="labelbackground">
               <label class="label">
-                <input type="radio" id="date_1" name="when" value="" />
+                <input
+                  class="dateRadio"
+                  type="radio"
+                  id="today"
+                  name="when"
+                  value="today"
+                />
                 Today
               </label>
 
               <label class="label">
-                <input type="radio" id="date_2" name="when" value="" />
+                <input
+                  class="dateRadio"
+                  type="radio"
+                  id="tomorrow"
+                  name="when"
+                  value="tomorrow"
+                />
                 Tomorrow
               </label>
 
               <label class="label">
-                <input type="radio" id="date_3" name="when" value="" />
+                <input
+                  class="dateRadio"
+                  type="radio"
+                  id="this week"
+                  name="when"
+                  value="this week"
+                />
                 This week
               </label>
             </div>
@@ -41,5 +65,6 @@
         <button class="add-btn" type="submit">Add Task</button>
       </form>
     </div>
+    <script type="module" src="newTask.js" defer="true"></script>
   </body>
 </html>

@@ -211,3 +211,14 @@ input[id^="task"]:focus {
 .textfieldwrapper {
   margin: 3%;
 }
+.dateSelect {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  color: var(--text-primary-nav);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.dateSelect__input:checked + .dateSelect__span {
+  color: var(--primary-color);
+}

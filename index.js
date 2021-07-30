@@ -1,3 +1,5 @@
+import { parseJSONFromLocalStorage } from "./utils/localstorage.js";
+
 const mes = "Hallo welt";
 
 const menuButton = document.querySelector(".btnburger");
@@ -10,34 +12,28 @@ function sendAlert() {
 
 const taskList = document.querySelector(".taskList");
 
-const taskOne = createTaskListItem("Kaffee kochen");
+const tasks = parseJSONFromLocalStorage("tasks", []);
 
-taskList.append(taskOne);
-//______________________TEST--FIELD________________________
+const taskListItem = tasks.map((task) => createTaskListItem(task));
 
-// let msg = document.getElementById["task"];
+taskList.append(...taskListItem);
 
-function save() {
-  let task = document.getElementById("task").value;
+function createTaskListItem(task) {
+  const label = document.createElement("label");
+  const input = document.createElement("input");
+  const span = document.createElement("span");
 
-  window.localStorage.setItem(task);
-}
+  label.className = "taskItem";
 
-//______________________TEST--FIELD________________________
-function createTaskListItem(taskName) {
-  const newTaskLabel = document.createElement("label");
-  const newTaskInput = document.createElement("input");
-  const newTaskItem = document.createElement("span");
+  input.className = "taskItem__checkbox";
+  input.type = "checkbox";
+  input.setAttribute("name", "tasks");
+  input.checked = task.isDone;
 
-  newTaskItem.innerText = taskName;
+  span.className = "taskItem__labelText";
+  span.innerText = task.title;
 
-  newTaskLabel.className = "taskItem";
-  newTaskInput.className = "taskItem__checkbox";
-  newTaskInput.type = "checkbox";
-  newTaskInput.setAttribute("name", "tasks");
-  newTaskItem.className = "taskItem__labelText";
+  label.append(input, span);
 
-  newTaskLabel.append(newTaskInput, newTaskItem);
-
-  return newTaskLabel;
+  return label;
 }

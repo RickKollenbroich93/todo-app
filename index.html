@@ -20,53 +20,49 @@
           <img src="src/assets/notif.svg" alt="" />
         </button>
       </div>
+      <div class="dateSelector">
+        <label class="dateSelect">
+          <input
+            class="dateSelect__input"
+            type="radio"
+            name="dateSelector"
+            value="today"
+          />
+          <span class="dateSelect__span">Today</span>
+        </label>
 
-      <section class="dateSelector">
+        <label class="dateSelect">
+          <input
+            class="dateSelect__input"
+            type="radio"
+            name="dateSelector"
+            value="tomorrow"
+          />
+          <span class="dateSelect__span">Tomorrow</span>
+        </label>
+
+        <label class="dateSelect">
+          <input
+            class="dateSelect__input"
+            type="radio"
+            name="dateSelector"
+            value="this week"
+          />
+          <span class="dateSelect__span">This week</span>
+        </label>
+      </div>
+
+      <!-- <section class="dateSelector">
         <a href="#" class="taskNav__link">today</a>
         <a href="#" class="taskNav__link">tomorrow</a>
         <a href="#" class="taskNav__link">this week</a>
-      </section>
-      <section class="taskList">
-        <label class="taskItem">
-          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
-            class="taskItem__labelText"
-            >Book appointment with Jared</span
-          >
-        </label>
-
-        <label class="taskItem">
-          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
-            class="taskItem__labelText"
-            >Book appointment with Jared</span
-          >
-        </label>
-
-        <label class="taskItem">
-          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
-            class="taskItem__labelText"
-            >Book appointment with Jared</span
-          >
-        </label>
-
-        <label class="taskItem">
-          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
-            class="taskItem__labelText"
-            >Book appointment with Jared</span
-          >
-        </label>
-
-        <label class="taskItem">
-          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
-            class="taskItem__labelText"
-            >Book appointment with Jared</span
-          >
-        </label>
-      </section>
+      </section> -->
+      <section class="taskList"></section>
       <a href="newTask.html"
         ><button class="btn">
           <img src="src/assets/plus.svg" alt="creat new task" /></button
       ></a>
     </main>
-    <script src="index.js" defer="true"></script>
+    <script type="module" src="index.js" defer="true"></script>
   </body>
 </html>
